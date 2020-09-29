@@ -34,7 +34,7 @@ function res(){
     x=true;
     document.getElementById("status").innerHTML ="x is next";
     document.getElementById("tied").innerHTML ="congratulations";
-     document.getElementById("tied").style.color = "green";
+     document.getElementById("tied").style.color = "limegreen";
     winnerAlert.classList.remove("active");
     for(const cell of cells){
         if(cell.classList[2] === "x"){
