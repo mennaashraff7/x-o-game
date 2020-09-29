@@ -12,8 +12,8 @@
                 <h1>tic tac toe</h1>
             </div>
             <div class="status-reset">
-            <div class="status">x is next</div>
-            <div class="reset-btn">reset</div>
+            <div id="status" class="status">x is next</div>
+                <div class="reset-btn">reset</div>
             </div>
             <div class="game-grid">
                 <div class="game-cell top-left"></div>
@@ -25,6 +25,12 @@
                 <div class="game-cell bottom-left"></div>
                 <div class="game-cell bottom-middle"></div>
                 <div class="game-cell bottom-right"></div>
+            </div>
+            <div id="winner-alert" class="winner-alert">
+             <div class="conent">
+                <h1 id="tied">congratulations</h1> 
+                <p id="winner">x won!</p>
+                </div>
             </div>
         </div>
     <script src="app.js"></script>

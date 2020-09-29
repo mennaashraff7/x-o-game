@@ -16,9 +16,9 @@ body{
     background-color: black;
     text-align: center;
     margin:5px;
-    padding: 40px;
+    padding: 30px;
     border-radius: 25px;
-   .
+    position: relative;
 }
 
 .container .name {
@@ -32,11 +32,12 @@ body{
 }
 
 .status-reset .status {
-    
+    padding: 10px;
     color: whitesmoke;
 }
 
 .status-reset .reset-btn {
+    padding: 10px;
     color: whitesmoke;
     cursor: pointer;
 }
@@ -75,6 +76,28 @@ body{
     
 }
 
+.winner-alert{
+    position: absolute;
+    background-color: white;
+    padding: 15%;
+    top: -200%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(0.5);
+    border-radius: 1.5em;
+}
+.winner-alert h1{
+    color: limegreen;
+}
+.active{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    opacity: 1;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;
+}
+
 @media screen and (max-width:767px){
     .container { 
    width: 100%;
@@ -104,4 +127,6 @@ body{
     
 }
 }
+
+
 
